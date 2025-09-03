@@ -57,16 +57,17 @@ class PirateShip {
 }
 
 class MerchantShip {
-    func sail(_ direction: String) {
-        print("Sailing \(direction)")
+    let sailingEquipment: SailingEquipment
+    let hold: Hold
+
+    init(sailingEquipment: SailingEquipment, hold: Hold) {
+        self.sailingEquipment = sailingEquipment
+        self.hold = hold
     }
 
-    func load(_ goods: String) {
-        print("Loading \(goods)")
-    }
-
-    func unload(_ goods: String) {
-        print("Unloading \(goods)")
+    func exchange(_ oldGoods: String, with newGoods: String) {
+        hold.unload(oldGoods)
+        hold.load(newGoods)
     }
 }
 
