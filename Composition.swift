@@ -3,6 +3,13 @@
 // Composite Reuse Principle
 // Prefer composition over inheritance
 
+class Cannon {
+    func shoot(_ direction: String) {
+        print("Shooting cannon to the \(direction). Boom!")
+    }
+}
+
+
 class PirateShip {
     func sail(_ direction: String) {
         print("Sailing \(direction)")
