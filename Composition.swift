@@ -13,6 +13,18 @@ class BasicCannon: Cannon {
     }
 }
 
+class LongRangeCannon: Cannon {
+    func shoot(_ direction: String) {
+        print("Shooting cannon FAR to the \(direction). Boom!")
+    }
+}
+
+class LoudCannon: Cannon {
+    func shoot(_ direction: String) {
+        print("Shooting cannon to the \(direction). BOOOOM!")
+    }
+}
+
 class SailingEquipment {
     func sail(_ direction: String) {
         print("Sailing \(direction)")
