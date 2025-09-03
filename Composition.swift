@@ -9,6 +9,12 @@ class Cannon {
     }
 }
 
+class SailingEquipment {
+    func sail(_ direction: String) {
+        print("Sailing \(direction)")
+    }
+}
+
 
 class PirateShip {
     func sail(_ direction: String) {
