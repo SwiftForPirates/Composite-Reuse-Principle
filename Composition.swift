@@ -82,3 +82,22 @@ class PirateHunterShip {
         self.navalOfficers = navalOfficers
     }
 }
+
+
+class ArmedMerchantShip {
+    func sail(_ direction: String) {
+        print("Sailing \(direction)")
+    }
+
+    func shootCannon(_ direction: String) {
+        print("Shooting cannon to the \(direction). Boom!")
+    }
+
+    func load(_ goods: String) {
+        print("Loading \(goods)")
+    }
+
+    func unload(_ goods: String) {
+        print("Unloading \(goods)")
+    }
+}
