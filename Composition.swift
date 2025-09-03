@@ -72,15 +72,13 @@ class MerchantShip {
 }
 
 class PirateHunterShip {
-    func sail(_ direction: String) {
-        print("Sailing \(direction)")
-    }
+    let sailingEquipment: SailingEquipment
+    let cannon: Cannon
+    let navalOfficers: NavalOfficers
 
-    func shootCannon(_ direction: String) {
-        print("Shooting cannon to the \(direction). Boom!")
-    }
-
-    func arrestPirates() {
-        print("Game over!")
+    init(sailingEquipment: SailingEquipment, cannon: Cannon, navalOfficers: NavalOfficers) {
+        self.sailingEquipment = sailingEquipment
+        self.cannon = cannon
+        self.navalOfficers = navalOfficers
     }
 }
