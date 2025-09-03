@@ -21,6 +21,16 @@ class BoardingCrew {
     }
 }
 
+class Hold {
+    func load(_ goods: String) {
+        print("Loading \(goods)")
+    }
+
+    func unload(_ goods: String) {
+        print("Unloading \(goods)")
+    }
+}
+
 
 class PirateShip {
     func sail(_ direction: String) {
