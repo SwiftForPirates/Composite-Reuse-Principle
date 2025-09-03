@@ -15,6 +15,12 @@ class SailingEquipment {
     }
 }
 
+class BoardingCrew {
+    func plunder() {
+        print("Plundering")
+    }
+}
+
 
 class PirateShip {
     func sail(_ direction: String) {
