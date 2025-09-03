@@ -3,13 +3,16 @@
 // Composite Reuse Principle
 // Prefer composition over inheritance
 
-class PirateShip {
+class Ship {
     func sail(_ direction: String) {
         print("Sailing \(direction)")
     }
+}
 
+
+class PirateShip: Ship {
     func shootCannon(_ direction: String) {
-        print("Shooting cannon to the \(direction). Boom!")
+        print("Shooting cannon to the (direction). Boom!")
     }
 
     func plunder() {
@@ -17,11 +20,7 @@ class PirateShip {
     }
 }
 
-class MerchantShip {
-    func sail(_ direction: String) {
-        print("Sailing \(direction)")
-    }
-
+class MerchantShip: Ship {
     func load(_ cargo: String) {
         print("Loading \(cargo)")
     }
@@ -31,13 +30,9 @@ class MerchantShip {
     }
 }
 
-class PirateHunterShip {
-    func sail(_ direction: String) {
-        print("Sailing \(direction)")
-    }
-
+class PirateHunterShip: Ship {
     func shootCannon(_ direction: String) {
-        print("Shooting cannon to the \(direction). Boom!")
+        print("Shooting cannon to the (direction). Boom!")
     }
 
     func arrestPirates() {
