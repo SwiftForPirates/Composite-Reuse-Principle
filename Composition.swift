@@ -3,7 +3,11 @@
 // Composite Reuse Principle
 // Prefer composition over inheritance
 
-class Cannon {
+protocol Cannon {
+    func shoot(_ direction: String)
+}
+
+class BasicCannon: Cannon {
     func shoot(_ direction: String) {
         print("Shooting cannon to the \(direction). Boom!")
     }
