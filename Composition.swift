@@ -99,7 +99,6 @@ class PirateHunterShip {
     }
 }
 
-
 class ArmedMerchantShip {
     let sailingEquipment: SailingEquipment
     let cannon: Cannon
@@ -111,3 +110,16 @@ class ArmedMerchantShip {
         self.hold = hold
     }
 }
+
+
+let loudMerchant = ArmedMerchantShip(
+    sailingEquipment: SailingEquipment(),
+    cannon: LoudCannon(),
+    hold: Hold()
+)
+
+let dangerousHunter = PirateHunterShip(
+    sailingEquipment: SailingEquipment(),
+    cannon: LongRangeCannon(),
+    navalOfficers: NavalOfficers()
+)
