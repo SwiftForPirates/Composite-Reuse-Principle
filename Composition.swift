@@ -31,6 +31,12 @@ class Hold {
     }
 }
 
+class NavalOfficers {
+    func arrestPirates() {
+        print("Game over!")
+    }
+}
+
 
 class PirateShip {
     func sail(_ direction: String) {
