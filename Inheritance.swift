@@ -9,12 +9,14 @@ class Ship {
     }
 }
 
-
-class PirateShip: Ship {
+class ArmedShip: Ship {
     func shootCannon(_ direction: String) {
         print("Shooting cannon to the (direction). Boom!")
     }
+}
 
+
+class PirateShip: ArmedShip {
     func plunder() {
         print("Plundering")
     }
@@ -30,11 +32,7 @@ class MerchantShip: Ship {
     }
 }
 
-class PirateHunterShip: Ship {
-    func shootCannon(_ direction: String) {
-        print("Shooting cannon to the (direction). Boom!")
-    }
-
+class PirateHunterShip: ArmedShip {
     func arrestPirates() {
         print("Game over!")
     }
