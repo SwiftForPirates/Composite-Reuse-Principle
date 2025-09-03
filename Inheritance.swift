@@ -37,3 +37,22 @@ class PirateHunterShip: ArmedShip {
         print("Game over!")
     }
 }
+
+
+class ArmedMerchantShip /* What to inherit from? */ {
+    func sail(_ direction: String) {
+        print("Sailing \(direction)")
+    }
+
+    func shootCannon(_ direction: String) {
+        print("Shooting cannon to the (direction). Boom!")
+    }
+
+    func load(_ cargo: String) {
+        print("Loading \(cargo)")
+    }
+
+    func unload(_ cargo: String) {
+        print("Unloading \(cargo)")
+    }
+}
